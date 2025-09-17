@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary with Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen">
+    <div class="login-box">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <!-- MAIN SCREEN -->
+  <div id="main-screen">
+    <div class="header">
+      <h3>Happy Anniversary</h3>
+
+      <!-- PROFILE ICON + POPUP -->
+      <div class="profile-container">
+        <div class="profile-icon" onclick="toggleProfile()">👤</div>
+        <div id="profile-popup" class="profile-popup">
+          <h4>Profile Information</h4>
+          <p><strong>Name:</strong> <span id="info-name">Chanbormey</span></p>
+          <p><strong>Age:</strong> <span id="info-age">19</span></p>
+          <p><strong>Sex:</strong> <span id="info-sex">Female</span></p>
+          <p><strong>Address:</strong> <span id="info-address">Anlong Chrey, Krmombey, Thpong, Kampong Speu</span></p>
+          <p><strong>Relationship:</strong> <span id="info-relationship">Married</span></p>
+          <p><strong>Email:</strong> <span id="info-email">shushialsin168@gmail.com</span></p>
+          <p><strong>Tel:</strong> <span id="info-tel">+855 97 287 1638</span></p>
+          <button onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <img src="asset/1.png" alt="Photo 1" class="slide small" onclick="selectPhoto(this)" />
+      <img src="asset/2.png" alt="Photo 2" class="slide main" id="main-photo" onclick="selectPhoto(this)" />
+      <img src="asset/3.png" alt="Photo 3" class="slide small" onclick="selectPhoto(this)" />
+    </div>
+
+    <div class="description-box" id="animated-description"></div>
+
+    <div class="footer">
+      With Love ❤️
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
